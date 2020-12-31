@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Header i NavBAR */
+h3 , a , li ,#Contact{
+    margin-left: 2vw;
+    font-size: 2.5vh;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: #000000c5;
+    width: 100vw;
+    height: auto;
+    font-family: monospace, sans-serif;
+    z-index: 1;
+}
+h3{
+    display: inline-block;  
+    margin-left: 2vw;
+    font-size: 4vh;
+    margin-right: auto;
+    color: #63CCCA;
+}
+ul{
+    display: flex;
+    height: 3vh;
+}
+header a{
+    color: #63CCCA;
+}
+
+nav{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0vh 1vw;
+}
+nav li a{
+    transition: all 0.3s ease 0s;
+}
+nav li a:hover{
+    color: #a3f8f5;
+}
+header button {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 0.5vh 0.5vw;
+    background-color:#63CCCA;
+    border: none;
+    color: #000000;
+    border-radius: 50vh;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: #a3f8f5;
+}
+
+
+/* do 500 pixeli smiega */
+/* Header i NavBAR */
+
+    /* de_buger 1.6
+.box{
+        height: 200px; 
+        background-color: blueviolet; 
+        border: 2px solid red;
+} */
+#banner{
+    width: 100vw;
+    height: 100vh;
+    background: url(/obrazki/Technology_komp.jpg) center/cover fixed no-repeat;
+}
+#banner img{
+    position: relative;
+    max-height: 50vh;
+    max-width: 20vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20vh;
+}
+#banner h1{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-align: center;
+    font-size: 2.5vh;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    top: 22vh;
+}
+
+#container{
+    display: block;
+}
+/* BOXY !!!!!!!!!!! */
+
+.box{
+    display: flex;
+    min-height: 70vh;
+    width: 100vw;
+}
+.box__pol{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#box__1{
+    background-color: #FF3864;
+}
+
+#box__2{
+    background: url(/obrazki/Codeing.jpg) center/cover fixed no-repeat; 
+    width: 100vw;
+}
+
+
+#box__3{
+    background-color: #261447;
+}
+
+.text__pol{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFEF9F;
+    text-align: justify;
+}
+
+.obrazek__pol img{
+    display: flex;
+    position: relative;
+    max-width: 45vw;
+    max-height: 45vh;
+    margin: auto;
+    top: 10vh;
+}
+.ha1{
+    text-align: center;
+    font-size: 200%;
+    margin-top: 10vh;
+}
+span{
+    font-size: 100%;
+}
+
+
+/* BOXY !!!!!!!!!!! */
+footer{
+    margin: 0;
+    height: 50vh;
+    background-color: #000;
+}
+@media screen and (max-width: 750px){
+        
+    .box{
+        display: block;
+        width: 100vw;
+        height: auto;
+    }
+    .box__pol{
+        width: auto;
+        height: auto;
+    }
+    .obrazek__pol img{
+        display: block;
+        position: relative;
+        max-width: 50vw;
+        max-height: 50vh;
+        margin: auto;
+        top: 2vh;
+    }
+    .ha1{
+        display: block;
+        text-align: center;
+        font-size: 200%;
+        padding: 1vh;
+    }
+    p{
+        display: block;
+        font-size: 100%;
+        padding: 1vh;
+    }
+}
+
+@media screen and (max-width: 690px){
+    nav , header button{
+        display: none;
+    }
+    h3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #banner img{
+        max-height: 70vh;
+        max-width: 40vw;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        top: 20vh;
+    }
+
+
+}
